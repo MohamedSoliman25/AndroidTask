@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AndroidTask"
 include ':app'
+include ':ModuleA'
+include ':ModuleB'

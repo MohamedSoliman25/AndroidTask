@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/nav_graph_a"
+    app:startDestination="@id/listingScreen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <fragment
+        android:id="@+id/listingScreen"
+        android:name="com.example.modulea.presentation.ui.ListingScreen"
+        android:label="ListingScreen"
+        tools:layout="@layout/fragment_listing_screen" >
+        <action
+            android:id="@+id/action_listingScreen_to_detailsScreenFragment"
+            app:destination="@id/detailsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsScreenFragment"
+        android:name="com.example.moduleb.DetailsScreenFragment"
+        android:label="DetailsScreenFragment"
+        tools:layout="@layout/fragment_details_screen" >
+<!--        <argument-->
+<!--            android:name="universityItem"-->
+<!--            app:argType="String" />-->
+    </fragment>
+</navigation>
